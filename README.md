@@ -33,12 +33,12 @@ The Knight’s Tour problem cannot provide a solution for smaller sized boards. Th
  
 The Backtracking algorithms namely Depth First Search and Bruteforce tend to generate a path within a short span of time for smaller sized boards (5 x 5 – 7 x 7). However for 8 x 8 boards, unless the starting point for the Knight is an edge, it takes a substantial amount of time (running into an hour) for computing the path. Even with the modern computing power, it takes a significant amount of time for computation. The heuristic on the other hand helps bring down the computation time drastically. Enumerated below are a few of the test results on different sized boards with the computation time.
 
-Board Size	Algorithm’s Computation time (in seconds)
- 	Backtracking using DFS	Bruteforce using Backtracking	Warnsdorff’s Rule Heuristic
-5 x 5	0.002711893	0.009180727	7.61173E-4
-6 x 6	0.023058767	0.326552939	9.00551E-4
-7 x 7	0.238502047	0.08487706	0.00118215
-8 x 8	0.308912837	0.107203098	0.001395485
+| Board Size | Backtracking using DFS | Bruteforce using Backtracking | Warnsdorff’s Rule Heuristic
+| ---------- | --------------------- | ----------------------------- | ------------------------- |
+|5 x 5 | 0.002711893 | 0.009180727 | 7.61173E-4 |
+6 x 6	 | 0.023058767 | 0.326552939 | 9.00551E-4 |
+7 x 7	 | 0.238502047 | 0.08487706 | 0.00118215 |
+8 x 8	 | 0.308912837 | 0.107203098 | 0.001395485 |
 
 The heuristic works well for large sized boards such as 9 x 9 and 10 x 10 by finding the path in 0.001660017 seconds and 0.00208839 seconds respectively, wherein the backtracking algorithms would require massive computing power and a really long time to compute.
 
